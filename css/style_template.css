@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-color: #adcde2;
+}
+
+/* Nav Styles */
+nav {
+    /* Stylistic details*/
+    border-top: solid thin black;
+    background-color: #56A0D3;
+    border-bottom: solid  thin black;
+    padding: 10px 20px;
+
+    /* Flex parent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p, nav a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+nav a {
+    color: blue;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+/* Footer Styles */
+footer {
+    /* Stylistic details */
+    border-top: solid thin black;
+    background-color: #56A0D3;
+    border-bottom: solid  thin black;
+    font-family: 'Oswald', sans-serif;
+
+    /* Flex parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer a:hover {
+    color: darkblue;
+}
+
+footer a.linkedin {
+        color: #0a66c2;
+}
+
+footer a.linkedin:hover {
+        color: #004182;
+}
+
+/* Splash Section */
+.splash {
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2rem;
+}
+
+.splash h1 {
+    text-align: center;
+    font-size: 48px;
+    grid-column: span 2;
+}
+
+.splash img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+/* Address and Tag Line Section */
+.info p {
+    text-align: center;
+    margin: 2rem;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 1.5rem;
+}
+
+/* Sections */
+section {
+    font-family: 'Oswald', sans-serif; /* All Sections fonts */
+}
+
+/* Education Specific */
+.education {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.education h2 {
+    grid-column: span 2;
+}
+
+/* Honors and Awards Specific */
+.honors {
+    justify-items: center;
+}
+
+/*Skills Specific */
+.skills {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.skills h2 {
+    grid-column: span 2;
+}
+
+/* Leadership Specific */
+.leadership {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.leadership h3 {
+    padding: 1rem;
+}
+
+/* Header 2 Styles */
+section h2 {
+    text-align: center;
+    grid-column: span 2;
+    font-size: 36px;
+}
+
+/* Header 3 Styles */
+section h3 {
+    font-size: 24px;
+}
+
+/* Paragraph Styles */
+section p {
+    font-family: 'Oswald', sans-serif; /* All Sections fonts */
+}
+
+/* link styles */
+section a {
+    color: blue;
+    text-decoration: none;
+}
+section a:hover {
+    color: darkblue;
+}
+
+/* List Styles */
+ul {
+    list-style-type: circle;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1 fr;
+    gap: .5rem 1rem;
+    padding: 1rem;
+}
+dl dt{
+    font-weight: bold;
+    text-align: left;
+}
+
+dl dd{
+    margin: 0;
+    text-align: left;
+}
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #c2dcec;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+.card ul {
+    padding: 1rem;
+}
+
+/* Contact Page Styles */
+.contact-header {
+    justify-items: center;
+}
+
+.one-col {
+    display: flex;
+    flex-direction: column; /* Stack all elements vertically */
+    align-items: center; /* Center all elements horizontally */
+    justify-content: center; /* Center all elements vertically */
+    max-width: 550px; /* Set a max width for the container */
+    margin: 1.5rem auto; /* Center the container on the page */
+    gap: 1.5rem; /* Space between each element */
+    padding: 2rem; /* Padding around the container */
+    border: 1px solid #c2dcec; /* A border for separation */
+    border-radius: 10px; /* Round the corners of the container */
+    background-color: #c2dcec; /* A light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Vertical stack of elements */
+    gap: 1rem; /* Space between elements */
+}
+
+form input, form textarea {
+    font-family: 'Oswald', sans-serif; /* All Sections fonts */
+    width: 100%; /* Full width */
+    padding: .75rem; /* Padding for comfy input */
+    border: 1px solid #53A0DC; /* Mathces design */
+    border-radius: 5px; /* Slight rounded edges */
+    font-size: 1rem; /* Standard size */
+    box-sizing: border-box; /* Prevent from exceeding width */
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: 0 0 5px #53A0DC; /* Subtle glow */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    font-family: 'Oswald', sans-serif; /* All Sections fonts */
+    background-color: #adcde2; /* Same color as background */
+    border: none; /* Streamline button with column */
+}
+
+form button:hover {
+    background-color: #76aac8; /* Darker blue */
+}
